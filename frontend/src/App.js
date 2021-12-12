@@ -8,6 +8,8 @@ import AllCodeScreen from './Screen/Soal3/AllCodeScreen';
 import GenerateQRScreen from './Screen/Soal3/GenerateQRScreen';
 import TebakanScreen from './Screen/Soal4/TebakanScreen';
 import Page404 from './Screen/Page404';
+import PertamaScreen from './Screen/Soal1/PertamaScreen';
+import KeduaScreen from './Screen/Soal2/KeduaScreen';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <main style={{paddingTop: '3.5rem'}}>
           <Container>
             <Switch>
+              <Route path="/soal2" component={KeduaScreen} />
+              <Route path="/soal1" component={PertamaScreen} />
               <Route path="/soal4/tebaknomor" component={TebakanScreen} />
               <Route path="/soal3/allId/:id" component={GenerateQRScreen} />
               <Route path="/soal3/allId" component={AllCodeScreen} />
