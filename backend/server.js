@@ -23,7 +23,7 @@ app.use(express.json())
 app.use('/api/inventory', inventoryRouter)
 app.use('/api/qrcode', qrCodeRouter)
 
-const __dirname = path.resolve()
+// const __dirname = path.resolve()
 
 if(process.env.NODE_ENV ==='production') {
     app.use(express.static(path.join(__dirname, '/frontend/build')))
